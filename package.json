@@ -1,0 +1,9 @@
+{
+  "name": "herdr-user-secrets",
+  "version": "0.1.0",
+  "description": "Herdr plugin that opens the .NET user-secrets of the focused project in your editor.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "node --test" }
+}

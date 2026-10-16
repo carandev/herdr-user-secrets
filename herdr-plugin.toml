@@ -1,0 +1,20 @@
+id = "user-secrets"
+name = ".NET user secrets"
+version = "0.1.0"
+min_herdr_version = "0.9.5"
+description = "Open the .NET user-secrets (secrets.json) of the focused project in your editor, picking the project when the solution has several."
+platforms = ["linux", "macos", "windows"]
+
+[[actions]]
+id = "open"
+title = "Open .NET user secrets"
+contexts = ["workspace"]
+command = ["node", "bin/open.mjs"]
+
+[[panes]]
+id = "picker"
+title = ".NET user secrets"
+placement = "popup"
+width = "90%"
+height = "90%"
+command = ["node", "bin/picker.mjs"]
